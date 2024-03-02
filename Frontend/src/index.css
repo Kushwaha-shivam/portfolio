@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  /* background-color: #e0e0e0; */
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  font-family: 'ubuntu';
+
+}

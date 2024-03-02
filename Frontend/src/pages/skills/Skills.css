@@ -1,0 +1,25 @@
+.skill-section {
+    width: 90%;
+    background-color: rgb(12, 12, 12);
+    margin: 6rem auto;
+    padding: 2rem 0;
+    box-shadow: 2px 2px 10px 1px black;
+}
+
+.skill-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.skill-header h1 {
+    margin: 10px;
+    font-size: 3rem;
+}
+
+.skill-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

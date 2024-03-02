@@ -1,0 +1,40 @@
+.display-error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-error span {
+    color: red;
+}
+
+.display-error button {
+    width: 15rem;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.display-error button a{
+    text-decoration: none;
+    color: black;
+}
+
+/* responsiveness for pagenotfound */
+@media screen and (max-width: 500px){
+    .display-error button{
+        width: 80%;
+    }
+
+    .display-error h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

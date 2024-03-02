@@ -1,0 +1,37 @@
+.footer-section {
+    display: none;
+}
+
+.footer-hr {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social {
+    margin-bottom: 4px;
+}
+
+.social a {
+    margin-right: 1rem;
+}
+
+
+
+.content p {
+    font-size: 1.1rem;
+}
+
+/* display footer after a certain screen width */
+@media screen and (max-width: 700px) {
+    .footer-section {
+        display: block;
+    }
+}
