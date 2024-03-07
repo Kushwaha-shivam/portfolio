@@ -8,7 +8,9 @@ const formdata = require('../Backend/modals/Userdata.js')
 
 const port = process.env.PORT || 4000;
 const app = express();
-app.use(cors());
+app.use(cors(
+    res.setHeader('Access-Control-Allow-Origin', '*')
+));
 app.use(bodyParser.json());
 
 // apis to handle backend 
