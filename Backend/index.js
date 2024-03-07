@@ -12,10 +12,6 @@ app.use(cors({
     // origin: "https://portfolio-shivam-dev.vercel.app"
 }));
 
-app.use((req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://portfolio-shivam-dev.vercel.app'); 
-});
-
 app.use(bodyParser.json());
 
 // apis to handle backend 
