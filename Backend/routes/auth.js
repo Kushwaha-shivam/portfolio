@@ -1,6 +1,5 @@
 const express = require('express');
 const formdata = require('../modals/Userdata');
-const { body, validationResult } = require('express-validator');
 const router = express.Router();
 
 // create user using this api --> /api/auth/

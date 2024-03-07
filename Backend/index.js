@@ -10,6 +10,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api/auth', require('./routes/auth'));
+app.use('/', require('./routes/test'));
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 })
