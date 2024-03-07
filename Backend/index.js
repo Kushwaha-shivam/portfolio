@@ -7,6 +7,9 @@ const { connectToDb } = require('./database/db_connection');
 
 const port = process.env.PORT || 4000;
 const app = express();
+app.get("/", (req, res) => {
+    res.json("Hello I'm from backend");
+})
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api/auth', require('./routes/auth'));
