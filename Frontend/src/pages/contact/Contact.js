@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://portfolio-shivam-dev.vercel.app/api/auth/', { name, email, message });
+      await axios.post('http://localhost:4000/api/auth/', { name, email, message });
       success();
     } catch (err) {
       error();

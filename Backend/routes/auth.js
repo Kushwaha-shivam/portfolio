@@ -4,7 +4,6 @@ const { body, validationResult } = require('express-validator');
 const router = express.Router();
 
 // create user using this api --> /api/auth/
-
 router.post('/', (req, res) => {
 
     // creating a user data

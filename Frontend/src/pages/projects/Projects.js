@@ -3,9 +3,6 @@ import './Projects.css'
 import ProjectCard from '../../component/projectcard/ProjectCard'
 import cardpic1 from "../../images/project_1_img.png";
 import cardpic2 from "../../images/project_2_img.jpg";
-import cardpic3 from "../../images/project_3_img.jpg";
-
-
 
 const Projects = () => {
   return (
