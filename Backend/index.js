@@ -4,15 +4,34 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 dotenv.config();
 const { connectToDb } = require('./database/db_connection');
+const formdata = require('../Backend/modals/Userdata.js')
 
 const port = process.env.PORT || 4000;
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+// apis to handle backend 
 app.get("/", (req, res) => {
     res.json("Hello I'm from backend");
 })
-app.use(cors());
-app.use(bodyParser.json());
-app.use('/api/auth', require('./routes/auth'));
+
+app.post('/contact', (req, res) => {
+
+    // creating a user data
+    const { name, email, message } = req.body;
+    formdata.create({
+        name,
+        email,
+        message,
+    }).then((data) => {
+        res.json(data)
+    }).catch((error) => {
+        console.log(error);
+        res.json({ error: "Enter a valid email" })
+    })
+})
+
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 })
