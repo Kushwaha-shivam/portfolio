@@ -17,9 +17,8 @@ const Projects = () => {
         </div>
         <div className="project-container">
 
-          <ProjectCard img={cardpic1} projectName={"Blog App"} projectDetail={"Next.js, Express.js, MongoDb"} app_url={"https://www.google.com"} code_url={"https://www.youtube.com/"} />
-          <ProjectCard img={cardpic2} projectName={"ECommerce App"} projectDetail={"Next.js, Express.js, MongoDb"} app_url={"https://www.google.com"} code_url={"https://www.youtube.com/"} />
-          <ProjectCard img={cardpic3} projectName={"Project 3"} projectDetail={"HTML5, CSS3, JavaScript"} app_url={"https://www.google.com"} code_url={"https://www.youtube.com/"} />
+          <ProjectCard img={cardpic1} projectName={"Blog App"} projectDetail={"Next.js, Express.js, MongoDb"} app_url={"https://www.google.com"} code_url={"https://github.com/Kushwaha-shivam/blog"} />
+          <ProjectCard img={cardpic2} projectName={"ECommerce App"} projectDetail={"Next.js, Express.js, MongoDb"} app_url={"https://www.google.com"} code_url={"https://github.com/Kushwaha-shivam/ecommerce"} />
           
         </div>
       </div>
