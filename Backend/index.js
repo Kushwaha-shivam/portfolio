@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 })
 
 app.post('/contact', (req, res) => {
-
+    res.header('Access-Control-Allow-Origin', '*');
     // creating a user data
     const { name, email, message } = req.body;
     formdata.create({
