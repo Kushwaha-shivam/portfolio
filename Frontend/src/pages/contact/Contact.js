@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://portfolio-backend-nu-sage.vercel.app/contact', { name, email, message });
+      await axios.post('https://portfolio-backend-4atz.onrender.com', { name, email, message });
       success();
     } catch (err) {
       error();
